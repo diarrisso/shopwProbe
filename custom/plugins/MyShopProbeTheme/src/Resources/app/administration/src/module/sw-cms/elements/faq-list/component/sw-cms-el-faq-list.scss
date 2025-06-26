@@ -1,0 +1,40 @@
+.sw-cms-el-faq-list {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #142432;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__item {
+        background-color: #fff;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    &__question {
+        padding: 15px;
+        font-weight: 600;
+        background-color: #e9f0fa;
+        color: #142432;
+        cursor: pointer;
+        position: relative;
+    }
+
+    &__answer {
+        padding: 15px;
+        color: #52667a;
+        border-top: 1px solid #e9e9e9;
+    }
+}

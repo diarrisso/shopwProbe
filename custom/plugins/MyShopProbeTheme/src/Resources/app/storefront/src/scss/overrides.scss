@@ -1,0 +1,113 @@
+/*
+Override variable defaults
+==================================================
+This file is used to override default SCSS variables from the Shopware Storefront or Bootstrap.
+
+Because of the !default flags, theme variable overrides have to be declared beforehand.
+https://getbootstrap.com/docs/5.3/customize/sass/#variable-defaults
+*/
+
+// Dark theme simple
+body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+
+.header-logo-main-img {
+  max-height: 40px !important;
+  width: auto !important;
+}
+
+@media (max-width: 768px) {
+  .header-logo-main-img {
+    max-height: 30px !important;
+  }
+}
+.header-main {
+  background-color: #000000 !important;
+}
+
+.main-navigation .nav-link {
+  color: #ffffff !important;
+}
+
+.footer-main {
+  background-color: #111111 !important;
+  color: #ffffff !important;
+}
+
+.card {
+  background-color: #111111 !important;
+  color: #ffffff !important;
+}
+
+a {
+  color: #ffffff !important;
+}
+
+// ==============================================
+// FAQ STYLING
+// ==============================================
+
+.faq-container {
+  margin: 2rem 0;
+
+  .faq-title {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .faq-item {
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+
+    .faq-question {
+      background-color: #222222;
+      padding: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s ease;
+      color: #ffffff;
+
+      &:hover {
+        background-color: #333333;
+      }
+
+      .faq-toggle {
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+
+        &.open {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .faq-answer {
+      padding: 1rem;
+      display: none;
+      border-top: 1px solid #333333;
+      color: #ffffff;
+      line-height: 1.6;
+
+      &.open {
+        display: block;
+      }
+    }
+  }
+}
+
+.faq-empty {
+  text-align: center;
+  padding: 2rem;
+  color: #cccccc;
+}

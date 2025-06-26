@@ -1,0 +1,31 @@
+{% block element_faq_list %}
+    <div class="cms-element-faq-list">
+        {% if element.data.faqs %}
+            <div class="faq-container">
+                <h2 class="faq-title">Häufig gestellte Fragen</h2>
+                {% for faq in element.data.faqs %}
+                    {% block element_faq_item %}
+                        <div class="faq-item" data-faq-item="{{ loop.index }}">
+                            {% block element_faq_question %}
+                                <div class="faq-question" data-faq-toggle="{{ loop.index }}">
+                                    <span>{{ faq.question }}</span>
+                                    <span class="faq-toggle">▼</span>
+                                </div>
+                            {% endblock %}
+
+                            {% block element_faq_answer %}
+                                <div class="faq-answer" data-faq-content="{{ loop.index }}">
+                                    {{ faq.answer|raw }}
+                                </div>
+                            {% endblock %}
+                        </div>
+                    {% endblock %}
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="faq-empty">
+                <p>Im Moment keine FAQ verfügbar.</p>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

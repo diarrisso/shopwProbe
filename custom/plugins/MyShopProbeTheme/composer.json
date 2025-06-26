@@ -1,0 +1,18 @@
+{
+  "name": "myshopprobe/theme",
+  "description": "MyShopProbe Custom Theme with FAQ System",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "MyShopProbeTheme\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "MyShopProbeTheme\\MyShopProbeTheme",
+    "label": {
+      "de-DE": "Theme MyShopProbeTheme plugin",
+      "en-GB": "Theme MyShopProbeTheme plugin"
+    }
+  }
+}

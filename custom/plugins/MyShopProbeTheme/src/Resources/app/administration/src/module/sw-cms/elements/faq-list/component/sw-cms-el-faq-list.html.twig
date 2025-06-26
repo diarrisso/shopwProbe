@@ -1,0 +1,15 @@
+{% block sw_cms_element_faq_list %}
+    <div class="sw-cms-el-faq-list">
+        <h2 class="sw-cms-el-faq-list__title">{{ title }}</h2>
+        <div class="sw-cms-el-faq-list__items">
+            <div v-for="(faq, index) in displayedFaqs" :key="index" class="sw-cms-el-faq-list__item">
+                <div class="sw-cms-el-faq-list__question">
+                    {{ faq.question }}
+                </div>
+                <div class="sw-cms-el-faq-list__answer">
+                    {{ faq.answer }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

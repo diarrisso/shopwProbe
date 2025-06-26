@@ -1,0 +1,15 @@
+{% block sw_cms_element_preview_faq_list %}
+    <div class="sw-cms-el-preview-faq-list">
+        <h2 class="sw-cms-el-preview-faq-list__title">FAQ Liste</h2>
+        <div class="sw-cms-el-preview-faq-list__items">
+            <div v-for="(faq, index) in demoFaqs" :key="index" class="sw-cms-el-preview-faq-list__item">
+                <div class="sw-cms-el-preview-faq-list__question">
+                    {{ faq.question }}
+                </div>
+                <div class="sw-cms-el-preview-faq-list__answer">
+                    {{ faq.answer }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

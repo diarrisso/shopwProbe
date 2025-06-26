@@ -1,0 +1,9 @@
+<div class="sw-cms-block-faq-list">
+    <slot name="faq">
+        <sw-cms-slot
+                :element="element"
+                :active="$parent.selectedSlot && $parent.selectedSlot.id === element.id"
+                @click="$parent.selectSlot(element.id)">
+        </sw-cms-slot>
+    </slot>
+</div>

@@ -1,0 +1,26 @@
+{% block sw_cms_element_config_faq_list %}
+    <div class="sw-cms-el-config-faq-list">
+        <sw-field
+            class="sw-cms-el-config-faq-list__title-field"
+            :label="$tc('sw-cms.elements.general.config.label.title')"
+            :placeholder="$tc('sw-cms.elements.general.config.placeholder.enterTitle')"
+            v-model="element.config.title.value"
+            @input="onInput">
+        </sw-field>
+
+        <sw-field
+            class="sw-cms-el-config-faq-list__max-items-field"
+            type="number"
+            :label="$tc('sw-cms.elements.general.config.label.maxItems')"
+            :placeholder="$tc('sw-cms.elements.general.config.placeholder.enterMaxItems')"
+            :min="1"
+            :max="50"
+            v-model="element.config.maxItems.value"
+            @change="onChangeMaxItems">
+        </sw-field>
+
+        <sw-alert variant="info">
+            {{ $tc('sw-cms.elements.general.config.infoText.faqList') }}
+        </sw-alert>
+    </div>
+{% endblock %}

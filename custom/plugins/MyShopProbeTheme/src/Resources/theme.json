@@ -1,0 +1,119 @@
+{
+  "name": "MyShopProbeTheme",
+  "author": "Shopware AG",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@MyShopProbeTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/my-shop-probe-theme/my-shop-probe-theme.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "previewMedia": "app/storefront/src/assets/img/masinga-tech.png",
+  "config": {
+    "blocks": {
+      "themeColors": {
+        "label": {
+          "en-GB": "Theme Colors",
+          "de-DE": "Theme-Farben"
+        }
+      },
+      "typography": {
+        "label": {
+          "en-GB": "Typography",
+          "de-DE": "Typografie"
+        }
+      },
+      "spacing": {
+        "label": {
+          "en-GB": "Spacing",
+          "de-DE": "Abstände"
+        }
+      }
+    },
+    "fields": {
+      "sw-color-brand-primary": {
+        "label": {
+          "en-GB": "Primary Color"
+        },
+        "type": "color",
+        "value": "#000000",
+        "editable": true,
+        "block": "themeColors"
+      },
+      "sw-text-color": {
+        "label": {
+          "en-GB": "Text Color"
+        },
+        "type": "color",
+        "value": "#ffffff",
+        "editable": true,
+        "block": "themeColors"
+      },
+      "sw-background-color": {
+        "label": {
+          "en-GB": "Background Color"
+        },
+        "type": "color",
+        "value": "#000000",
+        "editable": true,
+        "block": "themeColors"
+      },
+      "sw-font-family-base": {
+        "label": {
+          "en-GB": "Base Font Family"
+        },
+        "type": "fontFamily",
+        "value": "Arial, Helvetica, sans-serif",
+        "editable": true,
+        "block": "typography"
+      },
+      "sw-spacer-xs": {
+        "label": {
+          "en-GB": "Extra Small Spacing"
+        },
+        "type": "text",
+        "value": "0.5rem",
+        "editable": true,
+        "block": "spacing"
+      },
+      "sw-spacer-sm": {
+        "label": {
+          "en-GB": "Small Spacing"
+        },
+        "type": "text",
+        "value": "1rem",
+        "editable": true,
+        "block": "spacing"
+      },
+      "sw-spacer-md": {
+        "label": {
+          "en-GB": "Medium Spacing"
+        },
+        "type": "text",
+        "value": "1.5rem",
+        "editable": true,
+        "block": "spacing"
+      },
+      "sw-spacer-lg": {
+        "label": {
+          "en-GB": "Large Spacing"
+        },
+        "type": "text",
+        "value": "2rem",
+        "editable": true,
+        "block": "spacing"
+      }
+    }
+  }
+}
