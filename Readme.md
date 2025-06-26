@@ -21,7 +21,7 @@ This is a Shopware 6.7.0.0 project with the following components:
 
 1. Clone the repository:
    ```
-   git clone 
+   git clone git@github.com:diarrisso/shopwProbe.git
    cd shopw-probe
    ```
 
